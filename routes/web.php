@@ -17,9 +17,7 @@ use App\Http\Controllers\UrlController;
 */
 
 Auth::routes();
-
 Route::get('/s/{code}', [UrlController::class, 'redirect'])->name('url.redirect');
-
 Route::middleware('auth')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/urls', [UrlController::class, 'index'])->name('urls.index');
