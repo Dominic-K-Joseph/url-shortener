@@ -59,6 +59,7 @@ Update these values in your `.env` file:
 
 ## Future Enhancements
 
+
 - Click count tracking per URL
 - QR code generation
 - Custom slug support
