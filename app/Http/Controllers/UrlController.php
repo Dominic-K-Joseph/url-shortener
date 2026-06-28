@@ -64,7 +64,7 @@ class UrlController extends Controller
     {
         $url = Url::where('user_id', auth()->id())->findOrFail($id);
         $url->delete();
-        
+
         return response()->json(['success' => true]);
     }
 }
